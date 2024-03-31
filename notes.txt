@@ -1,0 +1,11 @@
+mkdir -p /openwrt/build_dir/target-mipsel_24kc_musl/linux-ramips_mt76x8/mt7628-p4rev-120395/.pkgdir/kmod-mt7628
+ERROR: module '/openwrt/build_dir/target-mipsel_24kc_musl/linux-ramips_mt76x8/mt7628-p4rev-120395/build/mt7628.ko' is missing.
+make[3]: *** [Makefile:74: /openwrt/build_dir/target-mipsel_24kc_musl/linux-ramips_mt76x8/mt7628-p4rev-120395/.pkgdir/kmod-mt7628.installed] Error 1
+make[3]: Leaving directory '/openwrt/package/vocore2/openwrt.1806/mt7628'
+time: package/vocore2/openwrt.1806/mt7628/compile#1765.13#176.16#2048.50
+    ERROR: package/vocore2/openwrt.1806/mt7628 failed to build.
+make[2]: *** [package/Makefile:116: package/vocore2/openwrt.1806/mt7628/compile] Error 1
+make[2]: Leaving directory '/openwrt'
+make[1]: *** [package/Makefile:110: /openwrt/staging_dir/target-mipsel_24kc_musl/stamp/.package_compile] Error 2
+make[1]: Leaving directory '/openwrt'
+make: *** [/openwrt/include/toplevel.mk:230: world] Error 2

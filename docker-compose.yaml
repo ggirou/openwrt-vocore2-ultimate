@@ -1,0 +1,16 @@
+version: "3"
+services:
+  vocore:
+    container_name: vocore
+    build:
+      # context: https://github.com/Vonger/vocore2.git#:docker
+      context: ./docker
+    volumes:
+      - ./openwrt:/openwrt
+    working_dir: /openwrt
+    user: "${UID}:${GID}"
+    command: 
+      - bash
+      - -c
+      - |
+        echo hello
